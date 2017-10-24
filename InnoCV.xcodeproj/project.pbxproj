@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67066618BCE4A680515675E0 /* Pods_InnoCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A960BAF400CBCA0A32078B /* Pods_InnoCV.framework */; };
+		E29C46E21F9E1D170028ABE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C46E11F9E1D170028ABE8 /* AppDelegate.swift */; };
+		E29C46E41F9E1D170028ABE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C46E31F9E1D170028ABE8 /* ViewController.swift */; };
+		E29C46E71F9E1D170028ABE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29C46E51F9E1D170028ABE8 /* Main.storyboard */; };
+		E29C46E91F9E1D170028ABE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29C46E81F9E1D170028ABE8 /* Assets.xcassets */; };
+		E29C46EC1F9E1D170028ABE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29C46EA1F9E1D170028ABE8 /* LaunchScreen.storyboard */; };
+		E29C46F41F9E2C6A0028ABE8 /* userCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29C46F31F9E2C6A0028ABE8 /* userCell.xib */; };
+		E29C46F71F9E2E970028ABE8 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C46F61F9E2E970028ABE8 /* UserService.swift */; };
+		E29C46F91F9E32220028ABE8 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C46F81F9E32220028ABE8 /* UserCell.swift */; };
+		E29C46FD1F9E33A70028ABE8 /* innoCV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E29C46FB1F9E33A70028ABE8 /* innoCV.xcdatamodeld */; };
+		E29C46FF1F9E34670028ABE8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C46FE1F9E34670028ABE8 /* CoreDataStack.swift */; };
+		E29C47011F9E34B00028ABE8 /* CoreDataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C47001F9E34B00028ABE8 /* CoreDataUser.swift */; };
+		E29C47031F9E35500028ABE8 /* LocalCoreDataUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C47021F9E35500028ABE8 /* LocalCoreDataUserService.swift */; };
+		E29C47061F9E36F50028ABE8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C47051F9E36F50028ABE8 /* Utils.swift */; };
+		E29C47081F9E4C9D0028ABE8 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C47071F9E4C9D0028ABE8 /* DetailsViewController.swift */; };
+		E2DBF13A1F9F8DFC00F0F0B8 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DBF1391F9F8DFC00F0F0B8 /* ErrorViewController.swift */; };
+		E2DBF13C1F9F93E000F0F0B8 /* ECProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DBF13B1F9F93E000F0F0B8 /* ECProgressView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07A960BAF400CBCA0A32078B /* Pods_InnoCV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InnoCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F966DC71FE6014D391B6130 /* Pods-InnoCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnoCV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InnoCV/Pods-InnoCV.debug.xcconfig"; sourceTree = "<group>"; };
+		36B9AFC9CCE1CB991C6B3A71 /* Pods-InnoCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnoCV.release.xcconfig"; path = "Pods/Target Support Files/Pods-InnoCV/Pods-InnoCV.release.xcconfig"; sourceTree = "<group>"; };
+		E29C46DE1F9E1D170028ABE8 /* InnoCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InnoCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29C46E11F9E1D170028ABE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E29C46E31F9E1D170028ABE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E29C46E61F9E1D170028ABE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E29C46E81F9E1D170028ABE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E29C46EB1F9E1D170028ABE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E29C46ED1F9E1D170028ABE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E29C46F31F9E2C6A0028ABE8 /* userCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = userCell.xib; path = Cells/userCell.xib; sourceTree = "<group>"; };
+		E29C46F61F9E2E970028ABE8 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Service/UserService.swift; sourceTree = "<group>"; };
+		E29C46F81F9E32220028ABE8 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserCell.swift; path = Cells/UserCell.swift; sourceTree = "<group>"; };
+		E29C46FC1F9E33A70028ABE8 /* innoCV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = innoCV.xcdatamodel; sourceTree = "<group>"; };
+		E29C46FE1F9E34670028ABE8 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = CoreData/CoreDataStack.swift; sourceTree = "<group>"; };
+		E29C47001F9E34B00028ABE8 /* CoreDataUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataUser.swift; path = CoreData/CoreDataUser.swift; sourceTree = "<group>"; };
+		E29C47021F9E35500028ABE8 /* LocalCoreDataUserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalCoreDataUserService.swift; path = CoreData/LocalCoreDataUserService.swift; sourceTree = "<group>"; };
+		E29C47051F9E36F50028ABE8 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
+		E29C47071F9E4C9D0028ABE8 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E2DBF1391F9F8DFC00F0F0B8 /* ErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		E2DBF13B1F9F93E000F0F0B8 /* ECProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECProgressView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E29C46DB1F9E1D170028ABE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67066618BCE4A680515675E0 /* Pods_InnoCV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		193FAC58F95E7C3E69690BE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F966DC71FE6014D391B6130 /* Pods-InnoCV.debug.xcconfig */,
+				36B9AFC9CCE1CB991C6B3A71 /* Pods-InnoCV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76F189E63AC1C162D929C291 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07A960BAF400CBCA0A32078B /* Pods_InnoCV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E29C46D51F9E1D170028ABE8 = {
+			isa = PBXGroup;
+			children = (
+				E29C46E01F9E1D170028ABE8 /* InnoCV */,
+				E29C46DF1F9E1D170028ABE8 /* Products */,
+				193FAC58F95E7C3E69690BE9 /* Pods */,
+				76F189E63AC1C162D929C291 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E29C46DF1F9E1D170028ABE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E29C46DE1F9E1D170028ABE8 /* InnoCV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E29C46E01F9E1D170028ABE8 /* InnoCV */ = {
+			isa = PBXGroup;
+			children = (
+				E29C47041F9E36DE0028ABE8 /* Utils */,
+				E29C46FA1F9E33750028ABE8 /* CoreData */,
+				E29C46F51F9E2E7C0028ABE8 /* Connections */,
+				E29C46E11F9E1D170028ABE8 /* AppDelegate.swift */,
+				E29C46E31F9E1D170028ABE8 /* ViewController.swift */,
+				E29C46E51F9E1D170028ABE8 /* Main.storyboard */,
+				E29C46E81F9E1D170028ABE8 /* Assets.xcassets */,
+				E29C46EA1F9E1D170028ABE8 /* LaunchScreen.storyboard */,
+				E29C46ED1F9E1D170028ABE8 /* Info.plist */,
+				E29C46F31F9E2C6A0028ABE8 /* userCell.xib */,
+				E29C46F81F9E32220028ABE8 /* UserCell.swift */,
+				E29C47071F9E4C9D0028ABE8 /* DetailsViewController.swift */,
+				E2DBF1391F9F8DFC00F0F0B8 /* ErrorViewController.swift */,
+			);
+			path = InnoCV;
+			sourceTree = "<group>";
+		};
+		E29C46F51F9E2E7C0028ABE8 /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				E29C46F61F9E2E970028ABE8 /* UserService.swift */,
+			);
+			name = Connections;
+			sourceTree = "<group>";
+		};
+		E29C46FA1F9E33750028ABE8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E29C46FB1F9E33A70028ABE8 /* innoCV.xcdatamodeld */,
+				E29C46FE1F9E34670028ABE8 /* CoreDataStack.swift */,
+				E29C47001F9E34B00028ABE8 /* CoreDataUser.swift */,
+				E29C47021F9E35500028ABE8 /* LocalCoreDataUserService.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		E29C47041F9E36DE0028ABE8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E29C47051F9E36F50028ABE8 /* Utils.swift */,
+				E2DBF13B1F9F93E000F0F0B8 /* ECProgressView.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E29C46DD1F9E1D170028ABE8 /* InnoCV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E29C46F01F9E1D170028ABE8 /* Build configuration list for PBXNativeTarget "InnoCV" */;
+			buildPhases = (
+				1DE391234C41E62848E38B44 /* [CP] Check Pods Manifest.lock */,
+				E29C46DA1F9E1D170028ABE8 /* Sources */,
+				E29C46DB1F9E1D170028ABE8 /* Frameworks */,
+				E29C46DC1F9E1D170028ABE8 /* Resources */,
+				34F9A568F0F892C5382ABD2A /* [CP] Embed Pods Frameworks */,
+				07101186F2B3BE1FA0647C3F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InnoCV;
+			productName = InnoCV;
+			productReference = E29C46DE1F9E1D170028ABE8 /* InnoCV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E29C46D61F9E1D170028ABE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Main 3.0";
+				TargetAttributes = {
+					E29C46DD1F9E1D170028ABE8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 934NVR3K3Z;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E29C46D91F9E1D170028ABE8 /* Build configuration list for PBXProject "InnoCV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E29C46D51F9E1D170028ABE8;
+			productRefGroup = E29C46DF1F9E1D170028ABE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E29C46DD1F9E1D170028ABE8 /* InnoCV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E29C46DC1F9E1D170028ABE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29C46F41F9E2C6A0028ABE8 /* userCell.xib in Resources */,
+				E29C46EC1F9E1D170028ABE8 /* LaunchScreen.storyboard in Resources */,
+				E29C46E91F9E1D170028ABE8 /* Assets.xcassets in Resources */,
+				E29C46E71F9E1D170028ABE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07101186F2B3BE1FA0647C3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InnoCV/Pods-InnoCV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DE391234C41E62848E38B44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		34F9A568F0F892C5382ABD2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InnoCV/Pods-InnoCV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E29C46DA1F9E1D170028ABE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29C46FD1F9E33A70028ABE8 /* innoCV.xcdatamodeld in Sources */,
+				E29C46F91F9E32220028ABE8 /* UserCell.swift in Sources */,
+				E29C47061F9E36F50028ABE8 /* Utils.swift in Sources */,
+				E29C46E41F9E1D170028ABE8 /* ViewController.swift in Sources */,
+				E29C46FF1F9E34670028ABE8 /* CoreDataStack.swift in Sources */,
+				E2DBF13A1F9F8DFC00F0F0B8 /* ErrorViewController.swift in Sources */,
+				E29C47011F9E34B00028ABE8 /* CoreDataUser.swift in Sources */,
+				E2DBF13C1F9F93E000F0F0B8 /* ECProgressView.swift in Sources */,
+				E29C46E21F9E1D170028ABE8 /* AppDelegate.swift in Sources */,
+				E29C46F71F9E2E970028ABE8 /* UserService.swift in Sources */,
+				E29C47031F9E35500028ABE8 /* LocalCoreDataUserService.swift in Sources */,
+				E29C47081F9E4C9D0028ABE8 /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E29C46E51F9E1D170028ABE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29C46E61F9E1D170028ABE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E29C46EA1F9E1D170028ABE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29C46EB1F9E1D170028ABE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E29C46EE1F9E1D170028ABE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E29C46EF1F9E1D170028ABE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E29C46F11F9E1D170028ABE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F966DC71FE6014D391B6130 /* Pods-InnoCV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 934NVR3K3Z;
+				INFOPLIST_FILE = InnoCV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscargarrucho.InnoCV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E29C46F21F9E1D170028ABE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B9AFC9CCE1CB991C6B3A71 /* Pods-InnoCV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 934NVR3K3Z;
+				INFOPLIST_FILE = InnoCV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscargarrucho.InnoCV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E29C46D91F9E1D170028ABE8 /* Build configuration list for PBXProject "InnoCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29C46EE1F9E1D170028ABE8 /* Debug */,
+				E29C46EF1F9E1D170028ABE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E29C46F01F9E1D170028ABE8 /* Build configuration list for PBXNativeTarget "InnoCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29C46F11F9E1D170028ABE8 /* Debug */,
+				E29C46F21F9E1D170028ABE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E29C46FB1F9E33A70028ABE8 /* innoCV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E29C46FC1F9E33A70028ABE8 /* innoCV.xcdatamodel */,
+			);
+			currentVersion = E29C46FC1F9E33A70028ABE8 /* innoCV.xcdatamodel */;
+			name = innoCV.xcdatamodeld;
+			path = CoreData/innoCV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E29C46D61F9E1D170028ABE8 /* Project object */;
+}

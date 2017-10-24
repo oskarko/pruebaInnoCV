@@ -28,6 +28,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let nib = UINib(nibName: "userCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
         
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+            // Fallback on earlier versions
+        }
+        
         searchText.delegate = self
         self.tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         self.tapGesture.cancelsTouchesInView = false // translate the event touch to the next view (tableView, for example)
@@ -60,6 +69,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 self.tableView.reloadData()
             }
         }
+    }
+    
+    
+    
+    func refreshData(refreshControl: UIRefreshControl) {
+        
+        UserService.shared.getAllUsers() { response in
+
+
+            if let response = response {
+                
+                print("call to the API: \(response["status"] ?? "")")
+            }
+            // if we don't hace internet connection, we must use the data cache
+            if let allUsers = LocalCoreDataUserService.shared.getAllUsers() {
+                self.allUsers = allUsers
+                self.tableView.reloadData()
+            }
+            refreshControl.endRefreshing()
+        }
+        
     }
     
     

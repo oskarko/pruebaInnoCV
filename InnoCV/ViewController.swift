@@ -53,12 +53,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if let response = response {
 
                 print("call to the API: \(response["status"] ?? "")")
-                
-                if let allUsers = LocalCoreDataUserService.shared.getAllUsers() {
-                    self.allUsers = allUsers
-                    self.tableView.reloadData()
-                }
-
+            }
+            // if we don't hace internet connection, we must use the data cache
+            if let allUsers = LocalCoreDataUserService.shared.getAllUsers() {
+                self.allUsers = allUsers
+                self.tableView.reloadData()
             }
         }
     }
